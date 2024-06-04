@@ -1,6 +1,8 @@
 int red_LED = 11;
 int push_button = 3;
 
+int delay_time = 100;
+
 int LED_state = 0; // Assuming starting with off
 int button_state_old; // We begin by not pressing. i.e 1
 int button_state_new; // Where we'll record the state of the button in-real-time
@@ -26,5 +28,7 @@ void loop() {
   }
 
   button_state_old = button_state_new; // Updating the old state of the button
+
+  delay(delay_time);
 
 }
