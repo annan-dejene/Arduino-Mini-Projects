@@ -21,7 +21,7 @@ void loop() {
   // direction --> By alternating the HIGH and LOW, we can get it to rotate either in clockwise or counter clockwise
   digitalWrite(direction_pin1, LOW);
   digitalWrite(direction_pin2, HIGH);
-  
+
   // Turn it on --> Set a speed
   analogWrite(speed_pin, motor_speed);
 }
